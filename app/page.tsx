@@ -1,7 +1,7 @@
 import BackgroundGradient from "@/components/BackgroundGradient";
 import Hero from "@/components/Hero";
 import SkillsSection from "@/components/SkillsSection";
-import TimelineSection from "@/components/TimelineSection";
+import InteractiveTimeline from "@/components/InteractiveTimeline";
 import DotNavigation from "@/components/DotNavigation";
 import ContactCTA from "@/components/ContactCTA";
 import Footer from "@/components/Footer";
@@ -13,7 +13,7 @@ export default function HomePage() {
       <DotNavigation />
       <Hero />
       <SkillsSection />
-      <TimelineSection />
+      <InteractiveTimeline />
       <ContactCTA />
       <Footer />
     </main>
