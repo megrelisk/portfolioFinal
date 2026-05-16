@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import {
   motion,
@@ -9,6 +9,7 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
+import { useLenis } from "@studio-freight/react-lenis";
 import { timelineEvents } from "@/lib/timeline-data";
 import type { TimelineEvent } from "@/lib/timeline-data";
 
@@ -21,12 +22,19 @@ function TimelineCard({
   event,
   index,
   totalCount,
+  registerRef,
 }: {
   event: TimelineEvent;
   index: number;
   totalCount: number;
+  registerRef?: (el: HTMLDivElement | null) => void;
 }) {
-  const cardRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement | null>(null);
+
+  const setRefs = (el: HTMLDivElement | null) => {
+    cardRef.current = el;
+    registerRef?.(el);
+  };
 
   // Track card's scroll progress through the viewport
   const { scrollYProgress } = useScroll({
@@ -57,7 +65,7 @@ function TimelineCard({
 
   return (
     <motion.div
-      ref={cardRef}
+      ref={setRefs}
       style={{ scale, opacity, filter: blur }}
       className="relative flex items-start gap-0 py-16 first:pt-0 last:pb-0"
     >
@@ -175,14 +183,105 @@ function RailLine({ scrollYProgress }: { scrollYProgress: MotionValue<number> })
 ───────────────────────────────────────────────────────────────*/
 export default function InteractiveTimeline() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const outerSectionRef = useRef<HTMLElement>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const isSnappingRef = useRef(false);
+  const isSectionActiveRef = useRef(false);
+  const wheelIdleTimer = useRef<number | null>(null);
+
+  const lenis = useLenis();
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start center", "end center"],
   });
 
+  useEffect(() => {
+    if (typeof window === "undefined" || !lenis) return;
+
+    const mql = window.matchMedia("(hover: hover) and (pointer: fine)");
+    if (!mql.matches) return;
+
+    const sectionEl = outerSectionRef.current;
+    if (!sectionEl) return;
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        isSectionActiveRef.current = entry.isIntersecting;
+      },
+      { rootMargin: "-30% 0px -30% 0px", threshold: 0 }
+    );
+    io.observe(sectionEl);
+
+    const snapToNearestCard = () => {
+      const viewportH = window.innerHeight;
+      const viewportCenter = viewportH / 2;
+      const currentY = lenis.scroll;
+
+      let bestY = currentY;
+      let bestDist = Infinity;
+
+      for (const el of cardRefs.current) {
+        if (!el) continue;
+        const rect = el.getBoundingClientRect();
+        const cardCenterViewport = rect.top + rect.height / 2;
+        const delta = cardCenterViewport - viewportCenter;
+        const targetY = currentY + delta;
+        const dist = Math.abs(delta);
+        if (dist < bestDist) {
+          bestDist = dist;
+          bestY = targetY;
+        }
+      }
+
+      if (bestDist < 4) return;
+      if (bestDist > viewportH * 0.6) return;
+
+      isSnappingRef.current = true;
+      lenis.scrollTo(bestY, {
+        duration: 0.7,
+        easing: (t: number) => 1 - Math.pow(1 - t, 3),
+        lock: true,
+        onComplete: () => {
+          window.setTimeout(() => {
+            isSnappingRef.current = false;
+          }, 60);
+        },
+      });
+    };
+
+    const maybeSnap = () => {
+      if (isSnappingRef.current) return;
+      if (!isSectionActiveRef.current) return;
+      if (lenis.isScrolling) {
+        wheelIdleTimer.current = window.setTimeout(maybeSnap, 80);
+        return;
+      }
+      snapToNearestCard();
+    };
+
+    const onWheel = () => {
+      if (wheelIdleTimer.current !== null) {
+        window.clearTimeout(wheelIdleTimer.current);
+      }
+      wheelIdleTimer.current = window.setTimeout(maybeSnap, 180);
+    };
+
+    window.addEventListener("wheel", onWheel, { passive: true });
+
+    return () => {
+      window.removeEventListener("wheel", onWheel);
+      if (wheelIdleTimer.current !== null) {
+        window.clearTimeout(wheelIdleTimer.current);
+        wheelIdleTimer.current = null;
+      }
+      io.disconnect();
+    };
+  }, [lenis]);
+
   return (
     <section
+      ref={outerSectionRef}
       id="interactive-timeline"
       className="relative py-24 overflow-hidden"
     >
@@ -226,6 +325,9 @@ export default function InteractiveTimeline() {
                 event={event}
                 index={i}
                 totalCount={timelineEvents.length}
+                registerRef={(el) => {
+                  cardRefs.current[i] = el;
+                }}
               />
             ))}
           </div>
