@@ -35,7 +35,7 @@ const columns: SkillColumn[] = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex flex-col gap-3">
           <span className="text-xs uppercase tracking-[0.3em] text-cyan-400">

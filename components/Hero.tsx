@@ -139,7 +139,7 @@ export default function Hero() {
               {/* Social Links - Moved above image */}
               <div className="flex items-center gap-5">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/soso-kartozia-27a29621a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -148,7 +148,7 @@ export default function Hero() {
                   <LinkedInIcon />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/sosokartozia/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -157,7 +157,7 @@ export default function Hero() {
                   <InstagramIcon />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/soso.kartozia.1/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"

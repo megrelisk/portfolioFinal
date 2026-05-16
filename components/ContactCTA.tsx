@@ -29,7 +29,7 @@ export default function ContactCTA() {
     <section id="contact" className="py-32">
       <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center">
         <h2 className="text-5xl font-black tracking-tight sm:text-6xl">
-          <span className="text-gradient-cyan">LET&apos;S CONNECT</span>
+          <span className="text-white">LET&apos;S CONNECT</span>
         </h2>
         <p className="mt-6 max-w-xl text-lg text-zinc-300">
           Open to new opportunities and interesting challenges.
@@ -38,7 +38,7 @@ export default function ContactCTA() {
         <div className="mt-10 flex flex-col items-center gap-6">
           <div className="flex items-center gap-5 text-zinc-500">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/soso-kartozia-27a29621a/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -47,7 +47,7 @@ export default function ContactCTA() {
               <LinkedInIcon />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/sosokartozia/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -56,7 +56,7 @@ export default function ContactCTA() {
               <InstagramIcon />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/soso.kartozia.1/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"

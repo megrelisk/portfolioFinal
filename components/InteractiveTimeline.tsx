@@ -65,9 +65,10 @@ function TimelineCard({
 
   return (
     <motion.div
+      id={event.id}
       ref={setRefs}
       style={{ scale, opacity, filter: blur }}
-      className="relative flex items-start gap-0 py-16 first:pt-0 last:pb-0"
+      className="relative flex items-start gap-0 py-16 first:pt-0 last:pb-0 scroll-mt-24"
     >
       {/* ── Dot on the rail ── */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[calc(50%-0px)] z-20 flex items-center justify-center">
@@ -94,7 +95,7 @@ function TimelineCard({
           {/* Glass panel */}
           <div className="relative overflow-visible rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl p-7 pt-10">
             {/* Year badge */}
-            <span className="absolute -top-5 left-6 text-5xl font-black leading-none text-gradient-cyan select-none">
+            <span className="absolute -top-5 left-6 text-5xl font-black leading-none text-white select-none">
               {event.year}
             </span>
 
@@ -125,7 +126,6 @@ function TimelineCard({
                   className="
                     relative w-full aspect-[4/3]
                     rounded-xl overflow-hidden
-                    border border-cyan-400/20
                     shadow-[0_8px_32px_rgba(0,229,255,0.15),0_2px_8px_rgba(0,0,0,0.6)]
                     md:-mt-12 md:-mr-4 md:mb-[-1rem]
                     bg-white/[0.02]
@@ -140,8 +140,6 @@ function TimelineCard({
                   />
                   {/* Inner gradient overlay for cinematic look */}
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-transparent to-black/50" />
-                  {/* Subtle neon border reflection */}
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-cyan-400/10" />
                 </div>
               </div>
             </div>

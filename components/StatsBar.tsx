@@ -12,7 +12,7 @@ interface Stat {
 const stats: Stat[] = [
   { value: 5, suffix: "+", label: "Years Experience" },
   { value: 3, suffix: "", label: "Industries" },
-  { value: 2, suffix: "", label: "Roles Simultaneously" },
+  { value: 29, suffix: "", label: "Age" },
   { value: 1, suffix: "", label: "Company Founded" },
 ];
 
@@ -46,7 +46,7 @@ function Counter({ to, suffix }: { to: number; suffix: string }) {
 
 export default function StatsBar() {
   return (
-    <div className="grid grid-cols-2 gap-6 border-y border-white/5 py-8 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
       {stats.map((s, i) => (
         <motion.div
           key={s.label}

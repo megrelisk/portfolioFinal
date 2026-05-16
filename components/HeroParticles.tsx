@@ -18,7 +18,7 @@ const particleOptions: ISourceOptions = {
   ───────────────────────────────────────────── */
   particles: {
     number: {
-      value: 48,          // sparse — only ~48 particles on desktop
+      value: 96,          // sparse — only ~48 particles on desktop
       density: {
         enable: true,
         width: 1920,      // normalise density against a 1920-wide canvas
@@ -32,7 +32,7 @@ const particleOptions: ISourceOptions = {
     shape: { type: "circle" },
 
     opacity: {
-      value: { min: 0.05, max: 0.28 }, // extremely subtle — never harsh
+      value: { min: 0.05, max: 0.45 }, // extremely subtle — never harsh
       animation: {
         enable: true,      // ← the "breathing / twinkling" effect
         speed: 0.6,        // very slow cycle
@@ -41,7 +41,7 @@ const particleOptions: ISourceOptions = {
     },
 
     size: {
-      value: { min: 0.8, max: 2.8 }, // fine dust, not blobs
+      value: { min: 0.8, max: 3.8 }, // fine dust, not blobs
       animation: {
         enable: true,
         speed: 1.2,

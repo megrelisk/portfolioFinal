@@ -88,7 +88,7 @@ export default function TimelineItem({ event, index }: Props) {
           <>
             <div>{imageBlock}</div>
             <div className="relative z-10 pt-8 mb-4">
-              <span className="absolute -top-4 left-0 text-6xl font-black text-gradient-cyan lg:text-7xl">
+              <span className="absolute -top-4 left-0 text-6xl font-black text-white lg:text-7xl">
                 {event.year}
               </span>
               <div className="pt-16">{textBlock}</div>
@@ -97,7 +97,7 @@ export default function TimelineItem({ event, index }: Props) {
         ) : (
           <>
             <div className="relative z-10 pt-8 mb-4">
-              <span className="absolute -top-4 right-0 text-6xl font-black text-gradient-cyan lg:text-7xl">
+              <span className="absolute -top-4 right-0 text-6xl font-black text-white lg:text-7xl">
                 {event.year}
               </span>
               <div className="pt-16">{textBlock}</div>
@@ -114,7 +114,7 @@ export function TimelineMobileCard({ event }: { event: TimelineEvent }) {
   return (
     <div className="snap-center shrink-0 w-[85vw]">
       <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-        <span className="text-5xl font-black text-gradient-cyan">{event.year}</span>
+        <span className="text-5xl font-black text-white">{event.year}</span>
         <div className="flex items-center gap-3">
           <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-cyan-dot" />
           <span className="text-xs uppercase tracking-[0.3em] text-cyan-400">
