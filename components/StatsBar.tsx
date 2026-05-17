@@ -2,19 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-
-interface Stat {
-  value: number;
-  suffix: string;
-  label: string;
-}
-
-const stats: Stat[] = [
-  { value: 5, suffix: "+", label: "Years Experience" },
-  { value: 3, suffix: "", label: "Industries" },
-  { value: 29, suffix: "", label: "Age" },
-  { value: 1, suffix: "", label: "Company Founded" },
-];
+import { useTranslations } from "./I18nProvider";
 
 function Counter({ to, suffix }: { to: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement | null>(null);
@@ -45,6 +33,15 @@ function Counter({ to, suffix }: { to: number; suffix: string }) {
 }
 
 export default function StatsBar() {
+  const { dict } = useTranslations();
+
+  const stats = [
+    { value: 5, suffix: "+", label: dict.stats.experience },
+    { value: 3, suffix: "", label: dict.stats.industries },
+    { value: 2, suffix: "", label: dict.stats.roles },
+    { value: 1, suffix: "", label: dict.stats.companies },
+  ];
+
   return (
     <div className="grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
       {stats.map((s, i) => (

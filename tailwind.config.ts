@@ -14,7 +14,12 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: [
+          "var(--font-inter)",
+          "var(--font-noto-georgian)",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       boxShadow: {
         "cyan-glow": "0 0 40px -10px rgba(0,229,255,0.5)",

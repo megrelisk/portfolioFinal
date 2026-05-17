@@ -1,21 +1,24 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const phrases = [
-  "Strategic Leader.",
-  "Data-Driven Builder.",
-  "Co-Founder.",
-  "BI Developer.",
-];
+import { useTranslations } from "./I18nProvider";
 
 export default function TypingTagline() {
+  const { dict, locale } = useTranslations();
+  const phrases = dict.hero.tagline;
+
   const [text, setText] = useState("");
   const [phraseIdx, setPhraseIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const current = phrases[phraseIdx];
+    setText("");
+    setPhraseIdx(0);
+    setDeleting(false);
+  }, [locale]);
+
+  useEffect(() => {
+    const current = phrases[phraseIdx] ?? "";
 
     if (!deleting && text === current) {
       const t = setTimeout(() => setDeleting(true), 1500);
@@ -35,7 +38,7 @@ export default function TypingTagline() {
       );
     }, delay);
     return () => clearTimeout(t);
-  }, [text, deleting, phraseIdx]);
+  }, [text, deleting, phraseIdx, phrases]);
 
   return (
     <p className="max-w-md text-lg text-zinc-300 sm:text-xl">
