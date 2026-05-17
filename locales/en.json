@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "Soso Kartozia — Strategic Leader & Data Analyst",
+    "description": "Strategic Leader, Data-Driven Builder, and Co-Founder. Open to new opportunities and interesting challenges."
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Select language",
+    "names": {
+      "en": "English",
+      "ka": "Georgian",
+      "ru": "Russian"
+    }
+  },
+  "hero": {
+    "nameFirst": "SOSO",
+    "nameLast": "KARTOZIA",
+    "status": "AVAILABLE FOR HIRE · 2026",
+    "ctaLabel": "Get in touch",
+    "imageAlt": "Soso Kartozia",
+    "tagline": [
+      "Strategic Leader.",
+      "Data-Driven Builder.",
+      "Co-Founder.",
+      "BI Developer."
+    ]
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "stats": {
+    "experience": "Years Experience",
+    "industries": "Industries",
+    "roles": "Roles Simultaneously",
+    "companies": "Company Founded"
+  },
+  "skills": {
+    "eyebrow": "What I do",
+    "title": "EXPERTISE",
+    "categories": [
+      {
+        "title": "Data & Analytics",
+        "items": ["SQL", "Power BI", "Reporting", "BI Development"]
+      },
+      {
+        "title": "Operations & Management",
+        "items": ["JIRA", "Agile", "Compliance", "Process Design"]
+      },
+      {
+        "title": "Strategy & Leadership",
+        "items": ["Investor Relations", "Partnerships", "Vision", "Decision-Making"]
+      },
+      {
+        "title": "AI & Modern Tools",
+        "items": [
+          "Claude Code",
+          "Claude",
+          "Gemini",
+          "Cursor",
+          "ChatGPT",
+          "Midjourney",
+          "Perplexity",
+          "Notion AI",
+          "GitHub Copilot",
+          "Make.com"
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Career path",
+    "title": "JOURNEY",
+    "events": {
+      "2025": {
+        "title": "Co-Founder & Strategic Leader",
+        "companyAndDate": "Youth-GE Georgia | 2025 – Present",
+        "intro": "I established the youth organization \"Youth-GE Georgia,\" whose main mission is to promote the personal and professional development of young people. My role combines defining the organization's global strategy with the technical and operational management of large-scale initiatives.",
+        "bullets": [
+          {
+            "label": "Strategic Development and Leadership:",
+            "detail": "Forming the organization's vision and long-term goals. Initiating and managing local and international youth projects, educational trainings, and exchange programs."
+          },
+          {
+            "label": "Youth Empowerment:",
+            "detail": "Creating non-formal education platforms that help young people acquire modern skills and access international opportunities."
+          },
+          {
+            "label": "Technical Project Management:",
+            "detail": "Managing the complete technical and digital ecosystem of the organization's key projects. Implementing innovative tools to effectively organize processes."
+          },
+          {
+            "label": "Strategic Partnership and Support:",
+            "detail": "Active collaboration with partner organizations and providing technical support for their large-scale events. A prominent example is the complete technical and operational support for the \"Mind Up\" English Language Olympiad."
+          }
+        ],
+        "tags": ["NGO Strategy", "Project Management", "Technical Operations", "Youth Leadership"]
+      },
+      "2024": {
+        "title": "Form 2 Specialist (Cost Estimator / Quantity Surveyor)",
+        "companyAndDate": "Decoline LLC | 2025 – Present",
+        "intro": "My main responsibility is managing the financial and technical documentation of construction and renovation projects. I ensure accurate accounting of completed works, material calculation, and strict budget control, which determines the financial transparency and technical soundness of each project.",
+        "bullets": [
+          {
+            "label": "Management of Acts of Completed Works (Form No. 2):",
+            "detail": "Compiling, verifying, and controlling compliance with standards for official accounting documentation for ongoing and completed renovation or construction sites."
+          },
+          {
+            "label": "Cost Estimation and Material Calculation:",
+            "detail": "Accurate calculation of required construction materials and resources based on project drawings and specifications to optimize costs."
+          },
+          {
+            "label": "Technical Reporting and Analytics:",
+            "detail": "Preparing detailed technical reports for management. Continuous monitoring of the planned budget versus actual costs (Plan vs. Actual) and variance analysis."
+          },
+          {
+            "label": "Cross-functional Coordination:",
+            "detail": "Close communication with project managers, engineers, and executing (field) teams to confirm information accuracy and the volumes of completed work."
+          },
+          {
+            "label": "Documentation Systematization:",
+            "detail": "Structuring complex technical and financial data, which simplifies the project handover process and reduces financial risks."
+          }
+        ],
+        "tags": ["Cost Estimation", "Form 2", "Technical Documentation", "Construction"]
+      },
+      "2023": {
+        "title": "Road Logistics and Operations Coordinator",
+        "companyAndDate": "Nuko+ LLC | 2023 – 2024",
+        "intro": "In this position, my main focus was the flawless management of daily operational processes and the strategic planning of logistical tasks. I ensured that ongoing projects and field operations were executed smoothly, on time, and with maximum resource optimization.",
+        "bullets": [
+          {
+            "label": "Operational Management and Logistics:",
+            "detail": "Planning and coordinating daily work schedules, complex routes, and delivery processes. Monitoring the precise execution of field operations."
+          },
+          {
+            "label": "Resource Optimization:",
+            "detail": "Efficient allocation of human and material resources, ensuring cost minimization and increased team productivity."
+          },
+          {
+            "label": "Real-time Crisis Management (Troubleshooting):",
+            "detail": "Making quick, data-driven, and alternative decisions during unforeseen delays to maintain workflow continuity."
+          },
+          {
+            "label": "Team Coordination and Field Control:",
+            "detail": "Ensuring close and continuous communication between field and administrative teams, monitoring performance quality, and providing detailed instructions."
+          },
+          {
+            "label": "Process Improvement and Reporting:",
+            "detail": "Timely identification of operational flaws, refining Standard Operating Procedures (SOPs), and preparing analytical reports for management."
+          }
+        ],
+        "tags": ["Logistics", "Operations Management", "Coordination", "Process Optimization"]
+      },
+      "2021": {
+        "title": "Agile Manager and Business Analyst",
+        "companyAndDate": "Space | 2021",
+        "intro": "In this position, my main focus was managing the product development cycle within the company and synchronizing strategic business requirements with technical execution. By implementing Agile methodology and optimizing processes, I ensured the seamless operation of cross-functional teams and the timely delivery of the product to the market (Time-to-market).",
+        "bullets": [
+          {
+            "label": "Agile/Scrum Process Facilitation:",
+            "detail": "Planning and managing sprints (Sprint Planning, Daily Stand-ups, Retrospectives). Maintaining the team's work rhythm and eliminating existing barriers (Blockers) along the development path."
+          },
+          {
+            "label": "Business Analysis and Requirements Management:",
+            "detail": "Working with stakeholders to identify business needs. Transforming them into clear, actionable technical tasks (User Stories, Acceptance Criteria) for the development team."
+          },
+          {
+            "label": "Backlog Administration:",
+            "detail": "Close collaboration with Product Owners to prioritize tasks and maintain a healthy Backlog structure."
+          },
+          {
+            "label": "Data-Driven Management:",
+            "detail": "Utilizing my previous (BI) experience to analyze team efficiency and delivery metrics for continuous process improvement."
+          },
+          {
+            "label": "Communication Bridge between Business and IT:",
+            "detail": "Translating technical language into business language and vice versa to ensure full transparency and proper expectation management across the company."
+          }
+        ],
+        "tags": ["Agile / Scrum", "Business Analysis", "Backlog Management", "Cross-functional Teams"]
+      },
+      "2020": {
+        "title": "Data Analyst & BI Developer",
+        "companyAndDate": "Space | 2020",
+        "intro": "During the rapid growth phase of one of the first and most dynamic Georgian neobanks, I ensured the development of the company's data infrastructure. My main task was the transformation of complex financial data into actionable and reliable business insights.",
+        "bullets": [
+          {
+            "label": "BI & Visualization:",
+            "detail": "Visualization of complex financial metrics through interactive dashboards."
+          },
+          {
+            "label": "Data Pipelines (ETL):",
+            "detail": "Processing, cleaning, and preparing data from diverse sources for analysis."
+          },
+          {
+            "label": "Behavioral Analysis:",
+            "detail": "Studying application user data to discover new opportunities and product flaws."
+          },
+          {
+            "label": "Cross-functional Collaboration:",
+            "detail": "Providing technical support to various departments with accurate, timely, and valid data."
+          }
+        ],
+        "tags": ["SQL", "Power BI", "ETL", "Data Visualization"]
+      }
+    }
+  },
+  "contact": {
+    "title": "LET'S CONNECT",
+    "description": "Open to new opportunities and interesting challenges."
+  },
+  "footer": {
+    "creditPrefix": "Designed & Developed by",
+    "creditName": "Soso"
+  },
+  "nav": {
+    "ariaLabel": "Section navigation",
+    "goTo": "Go to {label}",
+    "labels": {
+      "hero": "Intro",
+      "2025": "2025",
+      "2024": "2024",
+      "2023": "2023",
+      "2021": "2021",
+      "2020": "2020"
+    }
+  }
+}

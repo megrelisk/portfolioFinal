@@ -1,9 +1,17 @@
+"use client";
+
+import { useTranslations } from "./I18nProvider";
+
 export default function Footer() {
+  const { dict } = useTranslations();
+
   return (
     <footer className="border-t border-white/5 py-8 text-center text-sm text-zinc-500">
       <p>
-        Designed &amp; Developed by{" "}
-        <span className="text-gradient-cyan font-semibold">Soso</span>
+        {dict.footer.creditPrefix}{" "}
+        <span className="text-gradient-cyan font-semibold">
+          {dict.footer.creditName}
+        </span>
       </p>
     </footer>
   );

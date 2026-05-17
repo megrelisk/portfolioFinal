@@ -10,8 +10,11 @@ import {
   MotionValue,
 } from "framer-motion";
 import { useLenis } from "@studio-freight/react-lenis";
-import { timelineEvents } from "@/lib/timeline-data";
-import type { TimelineEvent } from "@/lib/timeline-data";
+import { timelineEvents, type TimelineEvent } from "@/lib/timeline-data";
+import { useTranslations } from "./I18nProvider";
+import type { Dictionary } from "@/lib/i18n/config";
+
+type EventCopy = Dictionary["timeline"]["events"][keyof Dictionary["timeline"]["events"]];
 
 /* ─────────────────────────────────────────────────────────────
    SCROLL-DRIVEN CARD
@@ -20,13 +23,11 @@ import type { TimelineEvent } from "@/lib/timeline-data";
 ───────────────────────────────────────────────────────────────*/
 function TimelineCard({
   event,
-  index,
-  totalCount,
+  copy,
   registerRef,
 }: {
   event: TimelineEvent;
-  index: number;
-  totalCount: number;
+  copy: EventCopy;
   registerRef?: (el: HTMLDivElement | null) => void;
 }) {
   const cardRef = useRef<HTMLDivElement | null>(null);
@@ -36,17 +37,13 @@ function TimelineCard({
     registerRef?.(el);
   };
 
-  // Track card's scroll progress through the viewport
   const { scrollYProgress } = useScroll({
     target: cardRef,
     offset: ["start end", "end start"],
   });
 
-  // Map 0→0.5 (entering) and 0.5→1 (leaving) to a -1…0…-1 distance
-  // 0.5 = dead center → distance 0 = fully active
   const distanceFromCenter = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0, 1]);
 
-  // Spring-smooth so transitions feel physical, not snappy
   const smoothDistance = useSpring(distanceFromCenter, {
     stiffness: 80,
     damping: 20,
@@ -55,12 +52,7 @@ function TimelineCard({
 
   const scale = useTransform(smoothDistance, [0, 1], [1.0, 0.85]);
   const opacity = useTransform(smoothDistance, [0, 1], [1.0, 0.35]);
-  const blur = useTransform(
-    smoothDistance,
-    [0, 1],
-    ["blur(0px)", "blur(6px)"]
-  );
-  // Glow intensifies at center
+  const blur = useTransform(smoothDistance, [0, 1], ["blur(0px)", "blur(6px)"]);
   const glowOpacity = useTransform(smoothDistance, [0, 1], [1, 0]);
 
   return (
@@ -92,34 +84,68 @@ function TimelineCard({
           </motion.div>
 
           {/* Glass panel */}
-          <div className="relative overflow-visible rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl p-7 pt-10">
+          <div className="relative overflow-visible rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl p-7 pt-12 sm:p-9 sm:pt-14">
             {/* Year badge */}
             <span className="absolute -top-5 left-6 text-5xl font-black leading-none text-gradient-cyan select-none">
               {event.year}
             </span>
 
-            <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+            <div className="flex flex-col gap-7 md:flex-row md:items-start md:gap-9">
               {/* Text content */}
               <div className="flex-1 min-w-0">
-                <div className="mb-2 flex items-center gap-2.5">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400 shadow-[0_0_6px_2px_rgba(0,229,255,0.6)]" />
-                  <span className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400">
-                    {event.subtitle}
-                  </span>
-                </div>
+                {/* Title block */}
+                <header className="mb-5">
+                  <h3 className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">
+                    {copy.title}
+                  </h3>
+                  <p className="mt-2 text-xs font-medium uppercase tracking-[0.22em] text-cyan-400/90">
+                    {copy.companyAndDate}
+                  </p>
+                </header>
 
-                <h3 className="mb-3 text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">
-                  {event.title}
-                </h3>
-
-                <p className="text-sm leading-relaxed text-zinc-400">
-                  {event.text}
+                {/* Intro paragraph */}
+                <p className="mb-6 text-sm leading-relaxed text-zinc-300 sm:text-[15px]">
+                  {copy.intro}
                 </p>
+
+                {/* Bullets — premium CV layout */}
+                <ul className="space-y-4">
+                  {copy.bullets.map((bullet, idx) => (
+                    <li
+                      key={`${event.id}-bullet-${idx}`}
+                      className="relative flex gap-3 pl-1"
+                    >
+                      {/* Glowing cyan dot marker */}
+                      <span
+                        aria-hidden
+                        className="relative mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400 shadow-[0_0_8px_2px_rgba(0,229,255,0.65)]"
+                      />
+                      <p className="min-w-0 text-sm leading-relaxed text-zinc-400">
+                        <span className="font-semibold text-zinc-200">
+                          {bullet.label}
+                        </span>{" "}
+                        {bullet.detail}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Tags */}
+                {copy.tags.length > 0 && (
+                  <ul className="mt-7 flex flex-wrap gap-2">
+                    {copy.tags.map((tag) => (
+                      <li
+                        key={`${event.id}-tag-${tag}`}
+                        className="rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-cyan-300/90"
+                      >
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
 
-              {/* ── Floating overlapping image ──
-                  Negative top margin lets it bleed over the glass frame border,
-                  creating the 3D "floating layer" effect. */}
+              {/* ── Floating overlapping image ── */}
               <div className="relative md:w-52 lg:w-60 shrink-0">
                 <div
                   className="
@@ -127,20 +153,18 @@ function TimelineCard({
                     rounded-xl overflow-hidden
                     border border-cyan-400/20
                     shadow-[0_8px_32px_rgba(0,229,255,0.15),0_2px_8px_rgba(0,0,0,0.6)]
-                    md:-mt-12 md:-mr-4 md:mb-[-1rem]
+                    md:-mt-10 md:-mr-4
                     bg-white/[0.02]
                   "
                 >
                   <Image
                     src={event.imageUrl}
-                    alt={`${event.title} — ${event.subtitle}`}
+                    alt={copy.title}
                     fill
                     sizes="(max-width: 768px) 90vw, 240px"
                     className="object-cover transition-transform duration-700 hover:scale-105"
                   />
-                  {/* Inner gradient overlay for cinematic look */}
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-transparent to-black/50" />
-                  {/* Subtle neon border reflection */}
                   <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-cyan-400/10" />
                 </div>
               </div>
@@ -154,22 +178,17 @@ function TimelineCard({
 
 /* ─────────────────────────────────────────────────────────────
    ANIMATED LEFT RAIL LINE
-   Fills from top → bottom as the user scrolls through the section.
 ───────────────────────────────────────────────────────────────*/
 function RailLine({ scrollYProgress }: { scrollYProgress: MotionValue<number> }) {
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
   return (
-    /* Absolute rail container — left edge of the content area */
     <div className="pointer-events-none absolute left-0 top-0 h-full w-px" aria-hidden>
-      {/* Static dim track */}
       <div className="h-full w-full bg-white/10" />
-      {/* Animated glowing fill */}
       <motion.div
         style={{ scaleY, originY: 0 }}
         className="absolute inset-0 w-full bg-gradient-to-b from-cyan-400 via-cyan-300 to-cyan-500"
       />
-      {/* Travelling glow head */}
       <motion.div
         style={{ top: useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) }}
         className="absolute left-1/2 -translate-x-1/2 h-8 w-px blur-sm bg-cyan-400"
@@ -190,6 +209,7 @@ export default function InteractiveTimeline() {
   const wheelIdleTimer = useRef<number | null>(null);
 
   const lenis = useLenis();
+  const { dict } = useTranslations();
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -285,17 +305,12 @@ export default function InteractiveTimeline() {
       id="interactive-timeline"
       className="relative py-24 overflow-hidden"
     >
-      {/* Ambient background glow — purely decorative */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
-      >
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-0 top-1/4 h-[600px] w-[400px] -translate-x-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
         <div className="absolute right-0 bottom-1/4 h-[400px] w-[300px] translate-x-1/2 rounded-full bg-cyan-400/4 blur-[100px]" />
       </div>
 
       <div className="mx-auto max-w-4xl px-6">
-        {/* ── Section header ── */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -304,27 +319,23 @@ export default function InteractiveTimeline() {
           className="mb-20 flex flex-col gap-3"
         >
           <span className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
-            Career path
+            {dict.timeline.eyebrow}
           </span>
           <h2 className="text-4xl font-black tracking-tight sm:text-5xl text-white">
-            JOURNEY
+            {dict.timeline.title}
           </h2>
           <div className="mt-2 h-px w-16 bg-gradient-to-r from-cyan-400 to-transparent" />
         </motion.div>
 
-        {/* ── Rail + Cards ── */}
         <div ref={sectionRef} className="relative pl-6">
-          {/* Left glowing vertical rail */}
           <RailLine scrollYProgress={scrollYProgress} />
 
-          {/* Cards */}
           <div className="flex flex-col">
             {timelineEvents.map((event, i) => (
               <TimelineCard
                 key={event.id}
                 event={event}
-                index={i}
-                totalCount={timelineEvents.length}
+                copy={dict.timeline.events[event.id]}
                 registerRef={(el) => {
                   cardRefs.current[i] = el;
                 }}

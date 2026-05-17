@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "./I18nProvider";
+
 function LinkedInIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -25,14 +29,16 @@ function FacebookIcon() {
 }
 
 export default function ContactCTA() {
+  const { dict } = useTranslations();
+
   return (
     <section id="contact" className="py-32">
       <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center">
         <h2 className="text-5xl font-black tracking-tight sm:text-6xl">
-          <span className="text-gradient-cyan">LET&apos;S CONNECT</span>
+          <span className="text-gradient-cyan">{dict.contact.title}</span>
         </h2>
         <p className="mt-6 max-w-xl text-lg text-zinc-300">
-          Open to new opportunities and interesting challenges.
+          {dict.contact.description}
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-6">
@@ -41,7 +47,7 @@ export default function ContactCTA() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label={dict.social.linkedin}
               className="transition-colors duration-300 hover:text-cyan-400"
             >
               <LinkedInIcon />
@@ -50,7 +56,7 @@ export default function ContactCTA() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
+              aria-label={dict.social.instagram}
               className="transition-colors duration-300 hover:text-cyan-400"
             >
               <InstagramIcon />
@@ -59,7 +65,7 @@ export default function ContactCTA() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Facebook"
+              aria-label={dict.social.facebook}
               className="transition-colors duration-300 hover:text-cyan-400"
             >
               <FacebookIcon />

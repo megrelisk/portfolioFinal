@@ -1,53 +1,25 @@
-interface SkillColumn {
-  title: string;
-  skills: string[];
-}
+"use client";
 
-const columns: SkillColumn[] = [
-  {
-    title: "Data & Analytics",
-    skills: ["SQL", "Power BI", "Reporting", "BI Development"],
-  },
-  {
-    title: "Operations & Management",
-    skills: ["JIRA", "Agile", "Compliance", "Process Design"],
-  },
-  {
-    title: "Strategy & Leadership",
-    skills: ["Investor Relations", "Partnerships", "Vision", "Decision-Making"],
-  },
-  {
-    title: "AI & Modern Tools",
-    skills: [
-      "Claude Code",
-      "Claude",
-      "Gemini",
-      "Cursor",
-      "ChatGPT",
-      "Midjourney",
-      "Perplexity",
-      "Notion AI",
-      "GitHub Copilot",
-      "Make.com",
-    ],
-  },
-];
+import { useTranslations } from "./I18nProvider";
 
 export default function SkillsSection() {
+  const { dict } = useTranslations();
+  const { eyebrow, title, categories } = dict.skills;
+
   return (
     <section id="skills" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex flex-col gap-3">
           <span className="text-xs uppercase tracking-[0.3em] text-cyan-400">
-            What I do
+            {eyebrow}
           </span>
           <h2 className="text-4xl font-black tracking-tight sm:text-5xl">
-            EXPERTISE
+            {title}
           </h2>
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
-          {columns.map((col) => (
+          {categories.map((col) => (
             <div
               key={col.title}
               className="glass rounded-2xl p-6 transition-colors duration-300 hover:border-cyan-400/30"
@@ -59,7 +31,7 @@ export default function SkillsSection() {
                 </h3>
               </div>
               <ul className="flex flex-wrap gap-2">
-                {col.skills.map((s) => (
+                {col.items.map((s) => (
                   <li
                     key={s}
                     className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm text-zinc-200"

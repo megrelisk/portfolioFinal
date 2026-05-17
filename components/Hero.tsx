@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import TypingTagline from "./TypingTagline";
 import StatsBar from "./StatsBar";
 import HeroParticles from "./HeroParticles";
+import { useTranslations } from "./I18nProvider";
 
 const container = {
   hidden: {},
@@ -70,7 +71,7 @@ function FacebookIcon() {
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement | null>(null);
-
+  const { dict } = useTranslations();
 
   return (
     <section
@@ -96,7 +97,7 @@ export default function Hero() {
               href="mailto:kartoziasoso@gmail.com"
               className="group inline-flex items-center gap-2 rounded-full border border-cyan-400/40 bg-cyan-400/10 px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-400/20 hover:shadow-cyan-glow"
             >
-              <span>Get in touch</span>
+              <span>{dict.hero.ctaLabel}</span>
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 <ArrowIcon />
               </span>
@@ -111,8 +112,8 @@ export default function Hero() {
             variants={item}
             className="font-sans font-black leading-[0.95] text-7xl md:text-8xl lg:text-9xl tracking-tighter text-white"
           >
-            <span className="block">SOSO</span>
-            <span className="block">KARTOZIA</span>
+            <span className="block">{dict.hero.nameFirst}</span>
+            <span className="block">{dict.hero.nameLast}</span>
           </motion.h1>
         </motion.div>
 
@@ -133,7 +134,7 @@ export default function Hero() {
             >
               <div className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-zinc-400">
                 <span className="inline-block h-2 w-2 animate-blink rounded-full bg-cyan-400 shadow-cyan-dot" />
-                AVAILABLE FOR HIRE · 2026
+                {dict.hero.status}
               </div>
 
               {/* Social Links - Moved above image */}
@@ -142,7 +143,7 @@ export default function Hero() {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="LinkedIn"
+                  aria-label={dict.social.linkedin}
                   className="text-[#0077B5] transition-colors duration-200 hover:scale-110"
                 >
                   <LinkedInIcon />
@@ -151,7 +152,7 @@ export default function Hero() {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"
+                  aria-label={dict.social.instagram}
                   className="text-[#E1306C] transition-colors duration-200 hover:scale-110"
                 >
                   <InstagramIcon />
@@ -160,7 +161,7 @@ export default function Hero() {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Facebook"
+                  aria-label={dict.social.facebook}
                   className="text-[#1877F2] transition-colors duration-200 hover:scale-110"
                 >
                   <FacebookIcon />
@@ -172,7 +173,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-3xl shadow-[0_0_40px_-10px_rgba(0,229,255,0.3)] border border-cyan-400/20 w-full">
               <Image
                 src="/card.png"
-                alt="Soso Kartozia"
+                alt={dict.hero.imageAlt}
                 width={800}
                 height={1000}
                 priority
