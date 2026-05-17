@@ -5,8 +5,9 @@ import { useTranslations } from "./I18nProvider";
 
 const LABELS: Record<Locale, string> = {
   en: "EN",
-  ka: "KA",
   ru: "RU",
+  zh: "ZH",
+  ka: "KA",
 };
 
 export default function LanguageSwitcher() {

@@ -60,7 +60,7 @@ function TimelineCard({
       id={event.id}
       ref={setRefs}
       style={{ scale, opacity, filter: blur }}
-      className="relative flex items-start gap-0 py-16 first:pt-0 last:pb-0 scroll-mt-24"
+      className="relative flex items-start gap-0 py-24 md:py-32 first:pt-0 last:pb-0 scroll-mt-24"
     >
       {/* ── Dot on the rail ── */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[calc(50%-0px)] z-20 flex items-center justify-center">
@@ -72,7 +72,7 @@ function TimelineCard({
       </div>
 
       {/* ── Card body (offset right of the rail) ── */}
-      <div className="ml-10 w-full">
+      <div className="ml-8 md:ml-12 w-full">
         <div className="relative">
           {/* Outer neon glow ring — only visible when active */}
           <motion.div
@@ -85,43 +85,68 @@ function TimelineCard({
           </motion.div>
 
           {/* Glass panel */}
-          <div className="relative overflow-visible rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl p-7 pt-12 sm:p-9 sm:pt-14">
-            {/* Year badge */}
-            <span className="absolute -top-5 left-6 text-5xl font-black leading-none text-white select-none">
-              {event.year}
-            </span>
+          <div className="relative overflow-visible rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl p-7 pt-8 sm:p-10 md:p-12 mt-8 md:mt-16">
+            <div className="relative z-0">
+              {/* ── Floating overlapping image (floated right) ── */}
+              <div className="float-right ml-6 md:ml-12 mb-6 relative w-40 md:w-80 lg:w-[26rem] aspect-[4/3] -mt-16 -mr-4 md:-mt-24 md:-mr-16 z-10">
+                <div
+                  className="
+                    relative w-full h-full
+                    rounded-xl overflow-hidden
+                    shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_20px_rgba(0,229,255,0.15)]
+                    bg-[#0a0a0a]
+                    transition-transform duration-500 hover:-translate-y-2
+                  "
+                >
+                  <Image
+                    src={event.imageUrl}
+                    alt={copy.title}
+                    fill
+                    sizes="(max-width: 768px) 160px, 400px"
+                    className="object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-transparent to-black/50" />
+                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-cyan-400/20" />
+                </div>
+              </div>
 
-            <div className="flex flex-col gap-7 md:flex-row md:items-start md:gap-9">
               {/* Text content */}
-              <div className="flex-1 min-w-0">
+              <div className="w-full">
+                {/* Year badge */}
+                <div className="mb-4 inline-block">
+                  <span className="text-4xl md:text-6xl font-black leading-none text-white drop-shadow-md">
+                    {event.year}
+                  </span>
+                </div>
+
                 {/* Title block */}
                 <header className="mb-5">
-                  <h3 className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">
+                  <h3 className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl drop-shadow-md">
                     {copy.title}
                   </h3>
-                  <p className="mt-2 text-xs font-medium uppercase tracking-[0.22em] text-cyan-400/90">
+                  <p className="mt-3 text-xs font-medium uppercase tracking-[0.25em] text-cyan-400">
                     {copy.companyAndDate}
                   </p>
                 </header>
 
                 {/* Intro paragraph */}
-                <p className="mb-6 text-sm leading-relaxed text-zinc-300 sm:text-[15px]">
+                <p className="mb-8 text-[15px] leading-relaxed text-zinc-300 sm:text-base">
                   {copy.intro}
                 </p>
 
-                {/* Bullets — premium CV layout */}
-                <ul className="space-y-4">
+                {/* Bullets — full width layout, naturally flowing around float if needed */}
+                <ul className="space-y-5">
                   {copy.bullets.map((bullet, idx) => (
                     <li
                       key={`${event.id}-bullet-${idx}`}
-                      className="relative flex gap-3 pl-1"
+                      className="relative flex gap-4 pl-1"
                     >
                       {/* Glowing cyan dot marker */}
                       <span
                         aria-hidden
-                        className="relative mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400 shadow-[0_0_8px_2px_rgba(0,229,255,0.65)]"
+                        className="relative mt-[10px] h-2 w-2 shrink-0 rounded-full bg-cyan-400 shadow-[0_0_12px_3px_rgba(0,229,255,0.8)]"
                       />
-                      <p className="min-w-0 text-sm leading-relaxed text-zinc-400">
+                      <p className="min-w-0 text-[15px] leading-relaxed text-zinc-400 sm:text-base">
                         <span className="font-semibold text-zinc-200">
                           {bullet.label}
                         </span>{" "}
@@ -130,43 +155,9 @@ function TimelineCard({
                     </li>
                   ))}
                 </ul>
-
-                {/* Tags */}
-                {copy.tags.length > 0 && (
-                  <ul className="mt-7 flex flex-wrap gap-2">
-                    {copy.tags.map((tag) => (
-                      <li
-                        key={`${event.id}-tag-${tag}`}
-                        className="rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-cyan-300/90"
-                      >
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-
-              {/* ── Floating overlapping image ── */}
-              <div className="relative md:w-52 lg:w-60 shrink-0">
-                <div
-                  className="
-                    relative w-full aspect-[4/3]
-                    rounded-xl overflow-hidden
-                    shadow-[0_8px_32px_rgba(0,229,255,0.15),0_2px_8px_rgba(0,0,0,0.6)]
-                    md:-mt-10 md:-mr-4
-                    bg-white/[0.02]
-                  "
-                >
-                  <Image
-                    src={event.imageUrl}
-                    alt={copy.title}
-                    fill
-                    sizes="(max-width: 768px) 90vw, 240px"
-                    className="object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-transparent to-black/50" />
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-cyan-400/10" />
-                </div>
+                
+                {/* Clearfix at the end to ensure the glass panel contains the floated image */}
+                <div className="clear-both" />
               </div>
             </div>
           </div>
@@ -257,6 +248,13 @@ export default function InteractiveTimeline() {
       if (bestDist < 4) return;
       if (bestDist > viewportH * 0.6) return;
 
+      // Don't snap if we're near or past the bottom of the section (in the footer)
+      const sectionEl = outerSectionRef.current;
+      if (sectionEl) {
+        const rect = sectionEl.getBoundingClientRect();
+        if (rect.bottom < viewportH) return;
+      }
+
       isSnappingRef.current = true;
       lenis.scrollTo(bestY, {
         duration: 0.7,
@@ -310,13 +308,13 @@ export default function InteractiveTimeline() {
         <div className="absolute right-0 bottom-1/4 h-[400px] w-[300px] translate-x-1/2 rounded-full bg-cyan-400/4 blur-[100px]" />
       </div>
 
-      <div className="mx-auto max-w-4xl px-6">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-12 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-20 flex flex-col gap-3"
+          className="mb-20 flex flex-col gap-3 pl-0 lg:pl-12"
         >
           <span className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
             {dict.timeline.eyebrow}
@@ -327,7 +325,7 @@ export default function InteractiveTimeline() {
           <div className="mt-2 h-px w-16 bg-gradient-to-r from-cyan-400 to-transparent" />
         </motion.div>
 
-        <div ref={sectionRef} className="relative pl-6">
+        <div ref={sectionRef} className="relative pl-10 md:pl-16 lg:pl-24">
           <RailLine scrollYProgress={scrollYProgress} />
 
           <div className="flex flex-col">

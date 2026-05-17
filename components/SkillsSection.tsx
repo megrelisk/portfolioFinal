@@ -7,7 +7,7 @@ export default function SkillsSection() {
   const { eyebrow, title, categories } = dict.skills;
 
   return (
-    <section id="skills" className="pb-24">
+    <section id="skills" className="pb-32 md:pb-48">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex flex-col gap-3">
           <span className="text-xs uppercase tracking-[0.3em] text-cyan-400">

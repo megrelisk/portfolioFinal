@@ -8,7 +8,8 @@
     "names": {
       "en": "English",
       "ka": "Georgian",
-      "ru": "Russian"
+      "ru": "Russian",
+      "zh": "Chinese"
     }
   },
   "hero": {
@@ -31,39 +32,63 @@
   },
   "stats": {
     "experience": "Years Experience",
-    "industries": "Industries",
-    "roles": "Roles Simultaneously",
-    "companies": "Company Founded"
+    "industries": "AI Tools Mastered",
+    "roles": "Agile Delivery",
+    "companies": "Umbrella Company Founded"
   },
   "skills": {
     "eyebrow": "What I do",
     "title": "EXPERTISE",
     "categories": [
       {
-        "title": "Data & Analytics",
-        "items": ["SQL", "Power BI", "Reporting", "BI Development"]
-      },
-      {
-        "title": "Operations & Management",
-        "items": ["JIRA", "Agile", "Compliance", "Process Design"]
-      },
-      {
-        "title": "Strategy & Leadership",
-        "items": ["Investor Relations", "Partnerships", "Vision", "Decision-Making"]
-      },
-      {
-        "title": "AI & Modern Tools",
+        "title": "AI & MODERN TOOLS",
         "items": [
-          "Claude Code",
-          "Claude",
           "Gemini",
-          "Cursor",
+          "Claude",
           "ChatGPT",
-          "Midjourney",
-          "Perplexity",
-          "Notion AI",
-          "GitHub Copilot",
-          "Make.com"
+          "Prompt Engineering",
+          "AI Automation",
+          "Make.com",
+          "Canva",
+          "Midjourney"
+        ]
+      },
+      {
+        "title": "ADMINISTRATION & TECHNICAL OPERATIONS",
+        "items": [
+          "Power BI",
+          "Excel VBA",
+          "Google Sheets scripts",
+          "SQL",
+          "Process Design",
+          "Agile",
+          "Jira",
+          "Google Workspace"
+        ]
+      },
+      {
+        "title": "WEB DEVELOPMENT & VIBE CODING",
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Firebase",
+          "Claude Code",
+          "GitHub",
+          "API",
+          "CLI",
+          "openclaw",
+          "Antigravity",
+          "Vercel"
+        ]
+      },
+      {
+        "title": "EDUCATION & STRATEGIC LEADERSHIP",
+        "items": [
+          "Project Management",
+          "International Logistics",
+          "Team Leadership",
+          "Partnerships"
         ]
       }
     ]
@@ -94,7 +119,12 @@
             "detail": "Active collaboration with partner organizations and providing technical support for their large-scale events. A prominent example is the complete technical and operational support for the \"Mind Up\" English Language Olympiad."
           }
         ],
-        "tags": ["NGO Strategy", "Project Management", "Technical Operations", "Youth Leadership"]
+        "tags": [
+          "NGO Strategy",
+          "Project Management",
+          "Technical Operations",
+          "Youth Leadership"
+        ]
       },
       "2024": {
         "title": "Form 2 Specialist (Cost Estimator / Quantity Surveyor)",
@@ -122,7 +152,12 @@
             "detail": "Structuring complex technical and financial data, which simplifies the project handover process and reduces financial risks."
           }
         ],
-        "tags": ["Cost Estimation", "Form 2", "Technical Documentation", "Construction"]
+        "tags": [
+          "Cost Estimation",
+          "Form 2",
+          "Technical Documentation",
+          "Construction"
+        ]
       },
       "2023": {
         "title": "Road Logistics and Operations Coordinator",
@@ -150,7 +185,12 @@
             "detail": "Timely identification of operational flaws, refining Standard Operating Procedures (SOPs), and preparing analytical reports for management."
           }
         ],
-        "tags": ["Logistics", "Operations Management", "Coordination", "Process Optimization"]
+        "tags": [
+          "Logistics",
+          "Operations Management",
+          "Coordination",
+          "Process Optimization"
+        ]
       },
       "2021": {
         "title": "Agile Manager and Business Analyst",
@@ -178,7 +218,12 @@
             "detail": "Translating technical language into business language and vice versa to ensure full transparency and proper expectation management across the company."
           }
         ],
-        "tags": ["Agile / Scrum", "Business Analysis", "Backlog Management", "Cross-functional Teams"]
+        "tags": [
+          "Agile / Scrum",
+          "Business Analysis",
+          "Backlog Management",
+          "Cross-functional Teams"
+        ]
       },
       "2020": {
         "title": "Data Analyst & BI Developer",
@@ -202,7 +247,12 @@
             "detail": "Providing technical support to various departments with accurate, timely, and valid data."
           }
         ],
-        "tags": ["SQL", "Power BI", "ETL", "Data Visualization"]
+        "tags": [
+          "SQL",
+          "Power BI",
+          "ETL",
+          "Data Visualization"
+        ]
       }
     }
   },
@@ -219,11 +269,13 @@
     "goTo": "Go to {label}",
     "labels": {
       "hero": "Intro",
+      "skills": "Skills",
       "2025": "2025",
       "2024": "2024",
       "2023": "2023",
       "2021": "2021",
-      "2020": "2020"
+      "2020": "2020",
+      "contact": "Contact"
     }
   }
 }

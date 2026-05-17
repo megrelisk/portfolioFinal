@@ -71,7 +71,7 @@ function FacebookIcon() {
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement | null>(null);
-  const { dict } = useTranslations();
+  const { dict, locale } = useTranslations();
 
   return (
     <section
@@ -110,7 +110,7 @@ export default function Hero() {
           {/* Title */}
           <motion.h1
             variants={item}
-            className="font-sans font-black leading-[0.95] text-7xl md:text-8xl lg:text-9xl tracking-tighter text-white"
+            className="font-sans font-black leading-[0.95] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter text-white"
           >
             <span className="block">{dict.hero.nameFirst}</span>
             <span className="block">{dict.hero.nameLast}</span>
@@ -172,7 +172,7 @@ export default function Hero() {
             {/* Image Container */}
             <div className="relative overflow-hidden rounded-3xl shadow-[0_0_40px_-10px_rgba(0,229,255,0.3)] border border-cyan-400/20 w-full">
               <Image
-                src="/card.png"
+                src={locale === "zh" ? "/chinese.jpeg" : "/card.png"}
                 alt={dict.hero.imageAlt}
                 width={800}
                 height={1000}

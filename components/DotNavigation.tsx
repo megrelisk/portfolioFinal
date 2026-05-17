@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "./I18nProvider";
 
-const SECTION_IDS = ["hero", "2025", "2024", "2023", "2021", "2020"] as const;
+const SECTION_IDS = ["hero", "skills", "2025", "2024", "2023", "2021", "2020", "contact"] as const;
 type SectionId = (typeof SECTION_IDS)[number];
 
 export default function DotNavigation() {

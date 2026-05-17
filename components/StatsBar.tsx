@@ -36,9 +36,9 @@ export default function StatsBar() {
   const { dict } = useTranslations();
 
   const stats = [
-    { value: 5, suffix: "+", label: dict.stats.experience },
-    { value: 3, suffix: "", label: dict.stats.industries },
-    { value: 2, suffix: "", label: dict.stats.roles },
+    { value: 8, suffix: "+", label: dict.stats.experience },
+    { value: 10, suffix: "+", label: dict.stats.industries },
+    { value: 100, suffix: "%", label: dict.stats.roles },
     { value: 1, suffix: "", label: dict.stats.companies },
   ];
 

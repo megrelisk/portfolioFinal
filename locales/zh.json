@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "我没想到你会翻译这个 — 哈哈哈哈",
+    "description": "如果你能看懂这个，你是不是间谍？为什么你要用谷歌翻译看我的中文页面？"
+  },
+  "languageSwitcher": {
+    "ariaLabel": "选择语言",
+    "names": {
+      "en": "English",
+      "ka": "Georgian",
+      "ru": "Russian",
+      "zh": "Chinese"
+    }
+  },
+  "hero": {
+    "nameFirst": "我没",
+    "nameLast": "想到",
+    "status": "你会翻译这个 · 哈哈",
+    "ctaLabel": "你真的翻译了？",
+    "imageAlt": "Soso",
+    "tagline": [
+      "为什么你在这里？",
+      "你是不是太无聊了？",
+      "好吧，既然你来了...",
+      "我只是在逗你玩！"
+    ]
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "stats": {
+    "experience": "翻译时间",
+    "industries": "无聊程度",
+    "roles": "搞笑指数",
+    "companies": "笑点"
+  },
+  "skills": {
+    "eyebrow": "你居然在读",
+    "title": "这是一个玩笑",
+    "categories": [
+      {
+        "title": "请不要当真",
+        "items": [
+          "哈哈",
+          "呵呵",
+          "嘻嘻",
+          "嘿嘿"
+        ]
+      },
+      {
+        "title": "我也很惊讶",
+        "items": [
+          "你为什么",
+          "还在读",
+          "这真的很",
+          "搞笑"
+        ]
+      },
+      {
+        "title": "别翻译了",
+        "items": [
+          "快停下",
+          "回去看英语",
+          "或者格鲁吉亚语",
+          "求你了"
+        ]
+      },
+      {
+        "title": "最后一组",
+        "items": [
+          "这是",
+          "我能想到的",
+          "全部",
+          "笑话",
+          "了"
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "我不明白",
+    "title": "为什么你要继续",
+    "events": {
+      "2025": {
+        "title": "如果你能看到这里，我佩服你",
+        "companyAndDate": "这里没有真实的经历 | 2025 – 永远",
+        "intro": "这简直太不可思议了！如果你把所有的中文都复制到谷歌翻译里，那你一定是个非常有耐心的人。或者你真的是个中国人？如果是的话，你好朋友！",
+        "bullets": [
+          {
+            "label": "恭喜你：",
+            "detail": "你发现了一个隐藏的彩蛋。"
+          },
+          {
+            "label": "不要告诉别人：",
+            "detail": "让他们自己来发现这个秘密。"
+          },
+          {
+            "label": "其实：",
+            "detail": "我不知道写什么了，所以我只是在随便打字。"
+          },
+          {
+            "label": "最后一句：",
+            "detail": "这真的很搞笑，谢谢你的耐心阅读。"
+          }
+        ],
+        "tags": []
+      },
+      "2024": {
+        "title": "还在看吗？",
+        "companyAndDate": "笑话公司 | 2024",
+        "intro": "我已经没有词了，但我必须把这些框框填满。所以这里有一段长长的中文，看起来很专业，其实什么都没说。",
+        "bullets": [
+          {
+            "label": "你看：",
+            "detail": "即使你不懂，汉字看起来也是很漂亮的。"
+          },
+          {
+            "label": "真的：",
+            "detail": "就像某种神秘的密码。"
+          }
+        ],
+        "tags": []
+      },
+      "2023": {
+        "title": "我认输了",
+        "companyAndDate": "无语 | 2023",
+        "intro": "好吧，你赢了。这是最后一段毫无意义的翻译。",
+        "bullets": [
+          {
+            "label": "再见：",
+            "detail": "回到真正的网站吧。"
+          }
+        ],
+        "tags": []
+      },
+      "2021": {
+        "title": "这是一个秘密",
+        "companyAndDate": "嘘 | 2021",
+        "intro": "不要告诉任何人你在这里看到了什么。",
+        "bullets": [
+          {
+            "label": "绝对：",
+            "detail": "要保密哦！"
+          }
+        ],
+        "tags": []
+      },
+      "2020": {
+        "title": "结束了",
+        "companyAndDate": "拜拜 | 2020",
+        "intro": "好了，真的没有了。快点切换回英语吧！",
+        "bullets": [
+          {
+            "label": "再见：",
+            "detail": "祝你今天开心。"
+          }
+        ],
+        "tags": []
+      }
+    }
+  },
+  "contact": {
+    "title": "不要联系我",
+    "description": "除非你觉得这个笑话很好笑。"
+  },
+  "footer": {
+    "creditPrefix": "由我设计并开发",
+    "creditName": "Soso (开玩笑的Soso)"
+  },
+  "nav": {
+    "ariaLabel": "导航",
+    "goTo": "去 {label}",
+    "labels": {
+      "hero": "Intro",
+      "skills": "Skills",
+      "2025": "2025",
+      "2024": "2024",
+      "2023": "2023",
+      "2021": "2021",
+      "2020": "2020",
+      "contact": "Contact"
+    }
+  }
+}
