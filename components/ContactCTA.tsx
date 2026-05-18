@@ -10,7 +10,7 @@ export default function ContactCTA() {
   const { dict } = useTranslations();
 
   return (
-    <section id="contact" className="py-32">
+    <section id="contact" className="pt-16 pb-8 relative z-10">
       <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center">
         <h2 className="text-5xl font-black tracking-tight sm:text-6xl">
           <span className="text-white">{dict.contact.title}</span>

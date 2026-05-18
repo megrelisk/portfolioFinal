@@ -52,7 +52,12 @@ function TimelineCard({
 
   const scale = useTransform(smoothDistance, [0, 1], [1.0, 0.85]);
   const opacity = useTransform(smoothDistance, [0, 1], [1.0, 0.35]);
-  const blur = useTransform(smoothDistance, [0, 1], ["blur(0px)", "blur(6px)"]);
+  const blur = useTransform(smoothDistance, (val) => {
+    if (typeof window !== "undefined" && window.innerWidth < 768) {
+      return "blur(0px)";
+    }
+    return `blur(${val * 6}px)`;
+  });
   const glowOpacity = useTransform(smoothDistance, [0, 1], [1, 0]);
 
   return (
