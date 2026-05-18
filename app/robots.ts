@@ -7,6 +7,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
       },
+      {
+        userAgent: ["facebookexternalhit", "Twitterbot", "LinkedInBot"],
+        allow: "/",
+      },
     ],
     sitemap: "https://sosokartozia.com/sitemap.xml",
   };

@@ -65,7 +65,7 @@ function TimelineCard({
       id={event.id}
       ref={setRefs}
       style={{ scale, opacity, filter: blur }}
-      className="relative flex items-start gap-0 py-24 md:py-32 first:pt-0 last:pb-0 scroll-mt-24"
+      className="relative flex items-start gap-0 py-12 md:py-32 first:pt-0 last:pb-0 scroll-mt-24"
     >
       {/* ── Dot on the rail ── */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[calc(50%-0px)] z-20 hidden md:flex items-center justify-center">
