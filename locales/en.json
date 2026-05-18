@@ -49,8 +49,7 @@
           "Prompt Engineering",
           "AI Automation",
           "Make.com",
-          "Canva",
-          "Midjourney"
+          "Canva"
         ]
       },
       {
@@ -159,9 +158,72 @@
           "Construction"
         ]
       },
+      "2025-mun": {
+        "title": "Model United Nations (MUN) Faculty Advisor",
+        "companyAndDate": "Münster, Germany | 2025",
+        "intro": "Represented Georgia as a Faculty Advisor at an international Model United Nations conference held in Münster, Germany. This engagement deepened expertise in multilateral diplomacy, international relations discourse, and the strategic representation of youth perspectives on a global stage.",
+        "bullets": [
+          {
+            "label": "Diplomatic Representation and Protocol:",
+            "detail": "Guided youth delegates through complex international policy debates, ensuring adherence to UN procedural rules and facilitating constructive dialogue across diverse national perspectives."
+          },
+          {
+            "label": "Youth Mentorship and Leadership Development:",
+            "detail": "Mentored student delegates in research methodology, position paper development, and public speaking — fostering critical thinking and cross-cultural communication skills essential for global leadership."
+          }
+        ],
+        "tags": [
+          "Diplomacy",
+          "International Relations",
+          "Youth Leadership",
+          "MUN"
+        ]
+      },
+      "2024-oct": {
+        "title": "Erasmus+ Exchange Participant",
+        "companyAndDate": "Latvia | October 2024",
+        "intro": "Participated in an Erasmus+ international youth exchange program in Latvia, engaging in structured cross-cultural dialogue, European youth networking, and non-formal education methodologies alongside participants from across Europe.",
+        "bullets": [
+          {
+            "label": "European Youth Networking:",
+            "detail": "Built meaningful connections with youth leaders and activists from multiple European countries, fostering international partnerships and laying groundwork for collaborative future projects."
+          },
+          {
+            "label": "Non-Formal Education and Active Citizenship:",
+            "detail": "Engaged in structured workshops focused on intercultural competence, active citizenship, and youth empowerment strategies within the broader European framework."
+          }
+        ],
+        "tags": [
+          "Erasmus+",
+          "Non-Formal Education",
+          "European Networking",
+          "Youth Exchange"
+        ]
+      },
+      "2024-apr": {
+        "title": "Erasmus+ Exchange Participant",
+        "companyAndDate": "Armenia | April 2024",
+        "intro": "Took part in an Erasmus+ youth exchange initiative in Armenia, contributing to regional cooperation efforts and participating in workshops centered on youth empowerment, civic engagement, and sustainable development in the South Caucasus region.",
+        "bullets": [
+          {
+            "label": "Regional Cooperation and Dialogue:",
+            "detail": "Engaged in collaborative activities with youth representatives from South Caucasus and neighboring regions, strengthening cross-border partnerships and contributing to shared regional development goals."
+          },
+          {
+            "label": "Youth Empowerment Workshops:",
+            "detail": "Actively participated in and co-facilitated sessions focused on leadership development, civic responsibility, and practical skill-building for emerging young leaders in the region."
+          }
+        ],
+        "tags": [
+          "Erasmus+",
+          "Regional Cooperation",
+          "Youth Empowerment",
+          "Caucasus"
+        ]
+      },
       "2023": {
-        "title": "Road Logistics and Operations Coordinator",
-        "companyAndDate": "Nuko+ LLC | 2023 – 2024",
+        "title": "Road Manager",
+        "companyAndDate": "Nuko+ LLC | 2022 – 2025",
         "intro": "In this position, my main focus was the flawless management of daily operational processes and the strategic planning of logistical tasks. I ensured that ongoing projects and field operations were executed smoothly, on time, and with maximum resource optimization.",
         "bullets": [
           {
@@ -194,7 +256,7 @@
       },
       "2021": {
         "title": "Agile Manager and Business Analyst",
-        "companyAndDate": "Space | 2021",
+        "companyAndDate": "Space | 2020 – 2022",
         "intro": "In this position, my main focus was managing the product development cycle within the company and synchronizing strategic business requirements with technical execution. By implementing Agile methodology and optimizing processes, I ensured the seamless operation of cross-functional teams and the timely delivery of the product to the market (Time-to-market).",
         "bullets": [
           {
@@ -224,35 +286,6 @@
           "Backlog Management",
           "Cross-functional Teams"
         ]
-      },
-      "2020": {
-        "title": "Data Analyst & BI Developer",
-        "companyAndDate": "Space | 2020",
-        "intro": "During the rapid growth phase of one of the first and most dynamic Georgian neobanks, I ensured the development of the company's data infrastructure. My main task was the transformation of complex financial data into actionable and reliable business insights.",
-        "bullets": [
-          {
-            "label": "BI & Visualization:",
-            "detail": "Visualization of complex financial metrics through interactive dashboards."
-          },
-          {
-            "label": "Data Pipelines (ETL):",
-            "detail": "Processing, cleaning, and preparing data from diverse sources for analysis."
-          },
-          {
-            "label": "Behavioral Analysis:",
-            "detail": "Studying application user data to discover new opportunities and product flaws."
-          },
-          {
-            "label": "Cross-functional Collaboration:",
-            "detail": "Providing technical support to various departments with accurate, timely, and valid data."
-          }
-        ],
-        "tags": [
-          "SQL",
-          "Power BI",
-          "ETL",
-          "Data Visualization"
-        ]
       }
     }
   },
@@ -263,19 +296,5 @@
   "footer": {
     "creditPrefix": "Designed & Developed by",
     "creditName": "Soso"
-  },
-  "nav": {
-    "ariaLabel": "Section navigation",
-    "goTo": "Go to {label}",
-    "labels": {
-      "hero": "Intro",
-      "skills": "Skills",
-      "2025": "2025",
-      "2024": "2024",
-      "2023": "2023",
-      "2021": "2021",
-      "2020": "2020",
-      "contact": "Contact"
-    }
   }
 }

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Out-Null *)",
+      "PowerShell(cd F:\\\\portfolioFinal; $content = [System.IO.File]::ReadAllText\\(\"locales\\\\ka.json\", [System.Text.Encoding]::UTF8\\); $line102 = \\($content -split \"`n\"\\)[101]; $line102.Substring\\(0, [Math]::Min\\(100, $line102.Length\\)\\))",
+      "PowerShell(cd F:\\\\portfolioFinal; $content = [System.IO.File]::ReadAllText\\(\"locales\\\\ka.json\", [System.Text.Encoding]::UTF8\\); $line102 = \\($content -split \"`n\"\\)[101]; $chars = $line102.ToCharArray\\(\\); $chars[76..80] | ForEach-Object { \"U+{0:X4} \\({1}\\)\" -f [int]$_, $_ })",
+      "PowerShell(cd F:\\\\portfolioFinal; $content = [System.IO.File]::ReadAllText\\(\"locales\\\\ka.json\", [System.Text.Encoding]::UTF8\\); $content = $content.Replace\\(\"ი`\"\" + \" | 2025\", \"ი`u201c | 2025\"\\); [System.IO.File]::WriteAllText\\(\"locales\\\\ka.json\", $content, [System.Text.Encoding]::UTF8\\); Write-Host \"done\")"
+    ]
+  }
+}
