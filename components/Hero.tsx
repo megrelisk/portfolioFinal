@@ -92,7 +92,7 @@ export default function Hero() {
           className="flex flex-col justify-center gap-8 w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto lg:pr-12"
         >
           {/* Get in touch & Tagline - Moved above Title */}
-          <motion.div variants={item} className="flex flex-wrap items-center gap-6">
+          <motion.div variants={item} className="flex flex-col items-start sm:flex-row sm:items-center gap-4 sm:gap-6">
             <a
               href="mailto:kartoziasoso@gmail.com"
               className="group inline-flex items-center gap-2 rounded-full border border-cyan-400/40 bg-cyan-400/10 px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-400/20 hover:shadow-cyan-glow"

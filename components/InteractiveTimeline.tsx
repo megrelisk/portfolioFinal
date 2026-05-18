@@ -68,7 +68,7 @@ function TimelineCard({
       className="relative flex items-start gap-0 py-24 md:py-32 first:pt-0 last:pb-0 scroll-mt-24"
     >
       {/* ── Dot on the rail ── */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[calc(50%-0px)] z-20 flex items-center justify-center">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[calc(50%-0px)] z-20 hidden md:flex items-center justify-center">
         <motion.span
           style={{ opacity: glowOpacity }}
           className="absolute h-5 w-5 rounded-full bg-cyan-400/30 blur-sm"
@@ -77,7 +77,7 @@ function TimelineCard({
       </div>
 
       {/* ── Card body (offset right of the rail) ── */}
-      <div className="ml-8 md:ml-12 w-full">
+      <div className="ml-0 md:ml-12 w-full">
         <div className="relative">
           {/* Outer neon glow ring — only visible when active */}
           <motion.div
@@ -179,7 +179,7 @@ function RailLine({ scrollYProgress }: { scrollYProgress: MotionValue<number> })
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
   return (
-    <div className="pointer-events-none absolute left-0 top-0 h-full w-px" aria-hidden>
+    <div className="pointer-events-none absolute left-0 top-0 h-full w-px hidden md:block" aria-hidden>
       <div className="h-full w-full bg-white/10" />
       <motion.div
         style={{ scaleY, originY: 0 }}
@@ -330,7 +330,7 @@ export default function InteractiveTimeline() {
           <div className="mt-2 h-px w-16 bg-gradient-to-r from-cyan-400 to-transparent" />
         </motion.div>
 
-        <div ref={sectionRef} className="relative pl-10 md:pl-16 lg:pl-24">
+        <div ref={sectionRef} className="relative pl-0 md:pl-16 lg:pl-24">
           <RailLine scrollYProgress={scrollYProgress} />
 
           <div className="flex flex-col">
