@@ -90,10 +90,10 @@ function TimelineCard({
           </motion.div>
 
           {/* Glass panel */}
-          <div className="relative overflow-visible rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl p-7 pt-8 sm:p-10 md:p-12 mt-8 md:mt-16">
+          <div className="relative overflow-visible md:rounded-2xl md:border md:border-white/10 md:bg-white/[0.035] md:backdrop-blur-xl p-0 sm:p-0 md:p-12 mt-8 md:mt-16">
             <div className="relative z-0">
               {/* ── Floating overlapping image (floated right) ── */}
-              <div className="float-right ml-6 md:ml-12 mb-6 relative w-40 md:w-80 lg:w-[26rem] aspect-[4/3] -mt-16 -mr-4 md:-mt-24 md:-mr-16 z-10">
+              <div className="float-right ml-4 md:ml-12 mb-4 md:mb-6 relative w-32 md:w-80 lg:w-[26rem] aspect-[4/3] mt-0 mr-0 md:-mt-24 md:-mr-16 z-10">
                 <div
                   className="
                     relative w-full h-full

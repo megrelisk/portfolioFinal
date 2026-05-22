@@ -43,7 +43,7 @@ export default function StatsBar() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-6 py-8 lg:grid-cols-4">
       {stats.map((s, i) => (
         <motion.div
           key={s.label}
