@@ -79,10 +79,10 @@ function TimelineCard({
       {/* ── Card body (offset right of the rail) ── */}
       <div className="ml-0 md:ml-12 w-full">
         <div className="relative">
-          {/* Outer neon glow ring — only visible when active */}
+          {/* Outer neon glow ring — only visible when active, hidden on mobile */}
           <motion.div
             style={{ opacity: glowOpacity }}
-            className="pointer-events-none absolute -inset-px rounded-2xl"
+            className="pointer-events-none absolute -inset-px rounded-2xl hidden md:block"
             aria-hidden
           >
             <div className="absolute inset-0 rounded-2xl shadow-[0_0_40px_4px_rgba(0,229,255,0.18)]" />
@@ -313,7 +313,7 @@ export default function InteractiveTimeline() {
         <div className="absolute right-0 bottom-1/4 h-[400px] w-[300px] translate-x-1/2 rounded-full bg-cyan-400/4 blur-[100px]" />
       </div>
 
-      <div className="mx-auto max-w-[1600px] px-6 md:px-12 lg:px-16">
+      <div className="mx-auto max-w-[1600px] px-3 sm:px-6 md:px-12 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

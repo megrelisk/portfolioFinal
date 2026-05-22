@@ -1,28 +1,28 @@
 {
   "meta": {
-    "title": "我没想到你会翻译这个 — 哈哈哈哈",
-    "description": "如果你能看懂这个，你是不是间谍？为什么你要用谷歌翻译看我的中文页面？"
+    "title": "Soso Kartozia — 战略领袖与数据分析师",
+    "description": "战略领袖、数据驱动型建设者和联合创始人。期待新的机遇与有趣的挑战。"
   },
   "languageSwitcher": {
     "ariaLabel": "选择语言",
     "names": {
       "en": "English",
-      "ka": "Georgian",
-      "ru": "Russian",
-      "zh": "Chinese"
+      "ka": "格鲁吉亚语",
+      "ru": "俄语",
+      "zh": "中文"
     }
   },
   "hero": {
-    "nameFirst": "我没",
-    "nameLast": "想到",
-    "status": "你会翻译这个 · 哈哈",
-    "ctaLabel": "你真的翻译了？",
-    "imageAlt": "Soso",
+    "nameFirst": "SOSO",
+    "nameLast": "KARTOZIA",
+    "status": "可预约合作 · 2026",
+    "ctaLabel": "保持联系",
+    "imageAlt": "Soso Kartozia",
     "tagline": [
-      "为什么你在这里？",
-      "你是不是太无聊了？",
-      "好吧，既然你来了...",
-      "我只是在逗你玩！"
+      "战略领袖。",
+      "数据驱动型建设者。",
+      "联合创始人。",
+      "BI开发人员。"
     ]
   },
   "social": {
@@ -31,178 +31,248 @@
     "facebook": "Facebook"
   },
   "stats": {
-    "experience": "翻译时间",
-    "industries": "无聊程度",
-    "roles": "搞笑指数",
-    "companies": "笑点"
+    "experience": "年专业经验",
+    "industries": "掌握的AI工具",
+    "roles": "敏捷交付",
+    "companies": "创立的非政府组织"
   },
   "skills": {
-    "eyebrow": "你居然在读",
-    "title": "这是一个玩笑",
+    "eyebrow": "我的工作领域",
+    "title": "专业领域",
     "categories": [
       {
-        "title": "请不要当真",
+        "title": "人工智能与现代工具",
         "items": [
-          "哈哈",
-          "呵呵",
-          "嘻嘻",
-          "嘿嘿"
+          "Gemini",
+          "Claude",
+          "ChatGPT",
+          "Omni",
+          "Prompt Engineering",
+          "AI Automation",
+          "Make.com",
+          "Canva"
         ]
       },
       {
-        "title": "我也很惊讶",
+        "title": "行政与技术运营",
         "items": [
-          "你为什么",
-          "还在读",
-          "这真的很",
-          "搞笑"
+          "Power BI",
+          "Excel VBA",
+          "Google Sheets scripts",
+          "SQL",
+          "Process Design",
+          "Agile",
+          "Jira",
+          "Google Workspace"
         ]
       },
       {
-        "title": "别翻译了",
+        "title": "网页开发与 Vibe Coding",
         "items": [
-          "快停下",
-          "回去看英语",
-          "或者格鲁吉亚语",
-          "求你了"
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Firebase",
+          "Claude Code",
+          "GitHub",
+          "API",
+          "CLI",
+          "openclaw",
+          "Antigravity",
+          "Vercel"
         ]
       },
       {
-        "title": "最后一组",
+        "title": "教育与战略领导力",
         "items": [
-          "这是",
-          "我能想到的",
-          "全部",
-          "笑话",
-          "了"
+          "Project Management",
+          "International Logistics",
+          "Team Leadership",
+          "Partnerships",
+          "Problem Solving"
         ]
       }
     ]
   },
   "timeline": {
-    "eyebrow": "我不明白",
-    "title": "为什么你要继续",
+    "eyebrow": "职业轨迹",
+    "title": "我的历程",
     "events": {
       "2025": {
-        "title": "如果你能看到这里，我佩服你",
-        "companyAndDate": "这里没有真实的经历 | 2025 – 永远",
-        "intro": "这简直太不可思议了！如果你把所有的中文都复制到谷歌翻译里，那你一定是个非常有耐心的人。或者你真的是个中国人？如果是的话，你好朋友！",
+        "title": "联合创始人兼战略领袖",
+        "companyAndDate": "Youth-GE Georgia | 2025年3月 – 至今",
+        "intro": "共同创立并领导非政府组织“Youth-GE Georgia”，致力于通过教育项目、国际交流和区域倡议促进青年发展。我负责管理项目的整体运营、战略方向和技术系统。",
         "bullets": [
           {
-            "label": "恭喜你：",
-            "detail": "你发现了一个隐藏的彩蛋。"
+            "label": "项目交付:",
+            "detail": "规划并执行本地及国际青年项目、培训和 Erasmus+ 交流活动，管理从概念设计到最终落地的全过程。"
           },
           {
-            "label": "不要告诉别人：",
-            "detail": "让他们自己来发现这个秘密。"
+            "label": "技术运营:",
+            "detail": "搭建并管理日常运营及公共宣传所需的数字化工具、网站和数据库系统。"
           },
           {
-            "label": "其实：",
-            "detail": "我不知道写什么了，所以我只是在随便打字。"
-          },
-          {
-            "label": "最后一句：",
-            "detail": "这真的很搞笑，谢谢你的耐心阅读。"
+            "label": "活动与伙伴关系:",
+            "detail": "为合作伙伴组织的活动提供技术和运营支持，包括全程负责“Mind Up”英语奥林匹克竞赛的物流协调。"
           }
         ],
-        "tags": []
+        "tags": [
+          "非政府组织战略",
+          "项目管理",
+          "技术运营",
+          "青年领导力"
+        ]
       },
       "2024": {
-        "title": "还在看吗？",
-        "companyAndDate": "笑话公司 | 2025",
-        "intro": "我已经没有词了，但我必须把这些框框填满。所以这里有一段长长的中文，看起来很专业，其实什么都没说。",
+        "title": "工程量与造价专员 (Form 2)",
+        "companyAndDate": "Decoline LLC | 2025年9月 – 至今",
+        "intro": "管理商业与住宅建筑项目的财务与技术文档。负责编制已完工工程量确认单（Form No. 2）、估算材料成本并监控项目预算，确保项目执行的透明性并控制在预算范围内。",
         "bullets": [
           {
-            "label": "你看：",
-            "detail": "即使你不懂，汉字看起来也是很漂亮的。"
+            "label": "Form No. 2 管理:",
+            "detail": "编制并审核在建及已完工建筑工地的官方工程量确认单，确保严格符合当地标准。"
           },
           {
-            "label": "真的：",
-            "detail": "就像某种神秘的密码。"
+            "label": "估算与成本控制:",
+            "detail": "根据建筑图纸精确计算材料需求和人工成本，防止资源浪费和预算超支。"
+          },
+          {
+            "label": "报告与现场协调:",
+            "detail": "分析计划支出与实际支出的偏差并向管理层汇报，与项目工程师和现场经理紧密合作以核实工作量。"
           }
         ],
-        "tags": []
+        "tags": [
+          "成本估算",
+          "Form 2",
+          "技术文档",
+          "建筑工程"
+        ]
       },
       "2025-mun": {
-        "title": "哇，你真的一直在读",
-        "companyAndDate": "德国明斯特 | 2025",
-        "intro": "在德国明斯特参加了联合国模拟大会。你知道吗？我现在真的很佩服你的坚持。一般人看到这里早就放弃了。",
+        "title": "模拟联合国 (MUN) 官方导师 (Faculty Advisor)",
+        "companyAndDate": "德国明斯特 | 2026年6月",
+        "intro": "作为官方导师代表格鲁吉亚参加在德国明斯特举办的模拟联合国国际会议，指导青年代表进行多边外交和政策分析。",
         "bullets": [
           {
-            "label": "外交工作：",
-            "detail": "指导学生代表进行联合国辩论，感觉很有国际范儿。"
+            "label": "指导与筹备:",
+            "detail": "辅导学生进行课题研究、起草政策立场文件及演讲培训，助力他们为国际辩论做好充分准备。"
           },
           {
-            "label": "国际关系：",
-            "detail": "认识了很多国家的人，开了很多会。外交就是这样，但我们都喜欢它。"
+            "label": "流程指引:",
+            "detail": "在委员会会议期间为代表提供支持，帮助他们理解复杂的议事规则并促成合作联盟的建立。"
           }
         ],
-        "tags": []
+        "tags": [
+          "外交",
+          "国际关系",
+          "青年领导力",
+          "模拟联合国"
+        ]
       },
       "2024-oct": {
-        "title": "你还在？！令人难以置信",
-        "companyAndDate": "拉脱维亚 | 2024年10月",
-        "intro": "去拉脱维亚参加了Erasmus+项目。天呐，你居然读到这里了。我需要给你发一个奖杯。可惜我做不到。",
+        "title": "Erasmus+ 交流项目成员",
+        "companyAndDate": "拉脱维亚 利耶帕亚",
+        "intro": "参加了以文化对话、欧洲青年网络和非正式教育方法为核心的 Erasmus+ 青年交流项目。",
         "bullets": [
           {
-            "label": "欧洲青年网络：",
-            "detail": "认识了很多欧洲朋友，分享了很多经历，喝了很多咖啡。"
+            "label": "跨国社交:",
+            "detail": "与欧洲各地的青年活动家建立联系，探讨未来的合作与区域项目。"
           },
           {
-            "label": "非正式教育：",
-            "detail": "参加了各种工作坊，学到了很多东西。嗯，就是这样。"
+            "label": "技能提升:",
+            "detail": "参加关于公民参与、领导力和非正式教育实践的专题研讨会。"
           }
         ],
-        "tags": []
+        "tags": [
+          "Erasmus+",
+          "非正式教育",
+          "欧洲网络",
+          "青年交流"
+        ]
       },
       "2024-apr": {
-        "title": "好吧你赢了，我服了",
-        "companyAndDate": "亚美尼亚 | 2024年4月",
-        "intro": "去亚美尼亚参加了Erasmus+青年交流项目。你是这个彩蛋的终极发现者。我真的从心底里佩服你。",
+        "title": "Erasmus+ 交流项目成员",
+        "companyAndDate": "亚美尼亚 察赫卡佐尔",
+        "intro": "参加了以区域合作、可持续发展和高加索地区青年领导力为主题的 Erasmus+ 青年交流项目。",
         "bullets": [
           {
-            "label": "区域合作：",
-            "detail": "与高加索地区的年轻人合作，讨论区域发展大事。很有意义，真的。"
+            "label": "区域对话:",
+            "detail": "与来自高加索地区的青年共同参与区域发展与公民责任的深入讨论。"
           },
           {
-            "label": "青年赋权工作坊：",
-            "detail": "参与并协助举办了各种工作坊，帮助年轻人发展领导力。"
+            "label": "领导力工作坊:",
+            "detail": "参加旨在为新兴社区组织者培养实用领导技能的培训课程。"
           }
         ],
-        "tags": []
+        "tags": [
+          "Erasmus+",
+          "区域合作",
+          "青年赋权",
+          "高加索"
+        ]
       },
       "2023": {
-        "title": "我认输了",
-        "companyAndDate": "无语 | 2022-2025",
-        "intro": "好吧，你赢了。这是最后一段毫无意义的翻译。",
+        "title": "路政经理",
+        "companyAndDate": "Nuko+ LLC | 2022年1月 – 2025年9月",
+        "intro": "负责日常物流与现场运营管理，优化路线规划并协调运输调度，以确保准时交付。",
         "bullets": [
           {
-            "label": "再见：",
-            "detail": "回到真正的网站吧。"
+            "label": "物流与调度:",
+            "detail": "规划并协调每日行驶路线和运输时刻表，监控现场运营的效率。"
+          },
+          {
+            "label": "资源分配:",
+            "detail": "管理司机排班与燃油消耗，在保持运输可靠性的同时降低运营成本。"
+          },
+          {
+            "label": "危机管理:",
+            "detail": "现场解决运输延误和物流瓶颈，迅速做出决策以确保货物正常流转。"
           }
         ],
-        "tags": []
+        "tags": [
+          "物流",
+          "运营管理",
+          "协调沟通",
+          "流程优化"
+        ]
       },
       "2021": {
-        "title": "这是一个秘密",
-        "companyAndDate": "嘘 | 2020-2022",
-        "intro": "不要告诉任何人你在这里看到了什么。",
+        "title": "信用风险分析师",
+        "companyAndDate": "Space | 2020年2月 – 2022年12月",
+        "intro": "在 Space 负责信用风险分析及更新风险管理策略。编写并维护基于 Java 的自动决策代码，分析贷款拒绝模式，并支持合作伙伴商户集成我们的分期付款产品，带领一个精干的团队。",
         "bullets": [
           {
-            "label": "绝对：",
-            "detail": "要保密哦！"
+            "label": "Java 风险工程:",
+            "detail": "维护并更新 Java 语言编写的自动信用决策逻辑，使其与业务政策和信用风险限额保持高度一致。"
+          },
+          {
+            "label": "拒绝分析与报告:",
+            "detail": "监控贷款申请结果，深入调查拒绝的根本原因，并提交数据驱动的报告及改善通过率的建议。"
+          },
+          {
+            "label": "商户分期支持:",
+            "detail": "与电商商户合作，协助他们将我们的分期付款 API 和支付选项集成至其结账系统中。"
+          },
+          {
+            "label": "团队协调:",
+            "detail": "带领一个专注于管理风险规则和提供技术集成支持的高效小组。"
           }
         ],
-        "tags": []
+        "tags": [
+          "Agile / Scrum",
+          "Business Analysis",
+          "Backlog Management",
+          "Cross-functional Teams"
+        ]
       }
     }
   },
   "contact": {
-    "title": "Congrats you found the Easter egg",
-    "description": "除非你觉得这个笑话很好笑。"
+    "title": "取得联系",
+    "description": "期待新的机遇与有趣的挑战。"
   },
   "footer": {
-    "creditPrefix": "由我设计并开发",
-    "creditName": "Soso (开玩笑的Soso)"
+    "creditPrefix": "设计与开发自",
+    "creditName": "Soso"
   }
 }

@@ -46,6 +46,7 @@
           "Gemini",
           "Claude",
           "ChatGPT",
+          "Omni",
           "Prompt Engineering",
           "AI Automation",
           "Make.com",
@@ -87,7 +88,8 @@
           "Project Management",
           "International Logistics",
           "Team Leadership",
-          "Partnerships"
+          "Partnerships",
+          "Problem Solving"
         ]
       }
     ]
@@ -98,24 +100,20 @@
     "events": {
       "2025": {
         "title": "Co-Founder & Strategic Leader",
-        "companyAndDate": "Youth-GE Georgia | 2025 – Present",
-        "intro": "I established the youth organization \"Youth-GE Georgia,\" whose main mission is to promote the personal and professional development of young people. My role combines defining the organization's global strategy with the technical and operational management of large-scale initiatives.",
+        "companyAndDate": "Youth-GE Georgia | March 2025 – Present",
+        "intro": "Co-founded and lead 'Youth-GE Georgia,' an NGO dedicated to youth development through educational programs, international exchanges, and regional initiatives. I manage overall operations, strategic direction, and technical systems for our projects.",
         "bullets": [
           {
-            "label": "Strategic Development and Leadership:",
-            "detail": "Forming the organization's vision and long-term goals. Initiating and managing local and international youth projects, educational trainings, and exchange programs."
+            "label": "Program Delivery:",
+            "detail": "Design and run local and international youth projects, trainings, and Erasmus+ exchanges, managing them from concept to execution."
           },
           {
-            "label": "Youth Empowerment:",
-            "detail": "Creating non-formal education platforms that help young people acquire modern skills and access international opportunities."
+            "label": "Technical Operations:",
+            "detail": "Set up and manage the digital tools, websites, and database systems that support our day-to-day operations and public campaigns."
           },
           {
-            "label": "Technical Project Management:",
-            "detail": "Managing the complete technical and digital ecosystem of the organization's key projects. Implementing innovative tools to effectively organize processes."
-          },
-          {
-            "label": "Strategic Partnership and Support:",
-            "detail": "Active collaboration with partner organizations and providing technical support for their large-scale events. A prominent example is the complete technical and operational support for the \"Mind Up\" English Language Olympiad."
+            "label": "Event Operations & Partnerships:",
+            "detail": "Coordinate technical and operational support for partner organization events, including managing full logistics for the 'Mind Up' English Language Olympiad."
           }
         ],
         "tags": [
@@ -126,29 +124,21 @@
         ]
       },
       "2024": {
-        "title": "Form 2 Specialist (Cost Estimator / Quantity Surveyor)",
-        "companyAndDate": "Decoline LLC | 2025 – Present",
-        "intro": "My main responsibility is managing the financial and technical documentation of construction and renovation projects. I ensure accurate accounting of completed works, material calculation, and strict budget control, which determines the financial transparency and technical soundness of each project.",
+        "title": "Form 2 Specialist",
+        "companyAndDate": "Decoline LLC | September 2025 – Present",
+        "intro": "Manage the financial and technical documentation for commercial and residential construction projects. I handle acts of completed works (Form No. 2), estimate material costs, and monitor project budgets to keep execution transparent and on-budget.",
         "bullets": [
           {
-            "label": "Management of Acts of Completed Works (Form No. 2):",
-            "detail": "Compiling, verifying, and controlling compliance with standards for official accounting documentation for ongoing and completed renovation or construction sites."
+            "label": "Form No. 2 Management:",
+            "detail": "Compile and verify official acts of completed works for active and completed construction sites, ensuring strict compliance with local standards."
           },
           {
-            "label": "Cost Estimation and Material Calculation:",
-            "detail": "Accurate calculation of required construction materials and resources based on project drawings and specifications to optimize costs."
+            "label": "Estimates & Cost Control:",
+            "detail": "Calculate material requirements and labor costs based on architectural blueprints, helping to prevent resource waste and budget overruns."
           },
           {
-            "label": "Technical Reporting and Analytics:",
-            "detail": "Preparing detailed technical reports for management. Continuous monitoring of the planned budget versus actual costs (Plan vs. Actual) and variance analysis."
-          },
-          {
-            "label": "Cross-functional Coordination:",
-            "detail": "Close communication with project managers, engineers, and executing (field) teams to confirm information accuracy and the volumes of completed work."
-          },
-          {
-            "label": "Documentation Systematization:",
-            "detail": "Structuring complex technical and financial data, which simplifies the project handover process and reduces financial risks."
+            "label": "Reporting & Field Coordination:",
+            "detail": "Analyze planned vs. actual expenditures to report variances to management, collaborating closely with project engineers and site managers to verify work volumes."
           }
         ],
         "tags": [
@@ -160,16 +150,16 @@
       },
       "2025-mun": {
         "title": "Model United Nations (MUN) Faculty Advisor",
-        "companyAndDate": "Münster, Germany | 2025",
-        "intro": "Represented Georgia as a Faculty Advisor at an international Model United Nations conference held in Münster, Germany. This engagement deepened expertise in multilateral diplomacy, international relations discourse, and the strategic representation of youth perspectives on a global stage.",
+        "companyAndDate": "Münster, Germany | June 2026",
+        "intro": "Represented Georgia as a Faculty Advisor at the International MUN conference in Münster, Germany, guiding youth delegates in multilateral diplomacy and policy analysis.",
         "bullets": [
           {
-            "label": "Diplomatic Representation and Protocol:",
-            "detail": "Guided youth delegates through complex international policy debates, ensuring adherence to UN procedural rules and facilitating constructive dialogue across diverse national perspectives."
+            "label": "Mentorship & Preparation:",
+            "detail": "Coached students in research methods, drafting policy papers, and public speaking, helping them prepare for international debates."
           },
           {
-            "label": "Youth Mentorship and Leadership Development:",
-            "detail": "Mentored student delegates in research methodology, position paper development, and public speaking — fostering critical thinking and cross-cultural communication skills essential for global leadership."
+            "label": "Procedural Guidance:",
+            "detail": "Supported delegates during committee sessions, helping them navigate complex rules of procedure and form collaborative alliances."
           }
         ],
         "tags": [
@@ -181,16 +171,16 @@
       },
       "2024-oct": {
         "title": "Erasmus+ Exchange Participant",
-        "companyAndDate": "Latvia | October 2024",
-        "intro": "Participated in an Erasmus+ international youth exchange program in Latvia, engaging in structured cross-cultural dialogue, European youth networking, and non-formal education methodologies alongside participants from across Europe.",
+        "companyAndDate": "Liepāja, Latvia",
+        "intro": "Participated in an Erasmus+ youth exchange program focused on cultural dialogue, European youth networks, and non-formal education methodologies.",
         "bullets": [
           {
-            "label": "European Youth Networking:",
-            "detail": "Built meaningful connections with youth leaders and activists from multiple European countries, fostering international partnerships and laying groundwork for collaborative future projects."
+            "label": "Cross-Border Networking:",
+            "detail": "Built connections with youth activists across Europe to discuss future collaboration and regional projects."
           },
           {
-            "label": "Non-Formal Education and Active Citizenship:",
-            "detail": "Engaged in structured workshops focused on intercultural competence, active citizenship, and youth empowerment strategies within the broader European framework."
+            "label": "Skill Development:",
+            "detail": "Participated in workshops on civic participation, leadership, and non-formal educational practices."
           }
         ],
         "tags": [
@@ -202,16 +192,16 @@
       },
       "2024-apr": {
         "title": "Erasmus+ Exchange Participant",
-        "companyAndDate": "Armenia | April 2024",
-        "intro": "Took part in an Erasmus+ youth exchange initiative in Armenia, contributing to regional cooperation efforts and participating in workshops centered on youth empowerment, civic engagement, and sustainable development in the South Caucasus region.",
+        "companyAndDate": "Tsaghkadzor, Armenia",
+        "intro": "Participated in an Erasmus+ youth exchange initiative centered on regional cooperation, sustainable development, and youth leadership in the Caucasus.",
         "bullets": [
           {
-            "label": "Regional Cooperation and Dialogue:",
-            "detail": "Engaged in collaborative activities with youth representatives from South Caucasus and neighboring regions, strengthening cross-border partnerships and contributing to shared regional development goals."
+            "label": "Regional Dialogues:",
+            "detail": "Engaged in joint discussions on regional development and civic responsibility with youth from the Caucasus."
           },
           {
-            "label": "Youth Empowerment Workshops:",
-            "detail": "Actively participated in and co-facilitated sessions focused on leadership development, civic responsibility, and practical skill-building for emerging young leaders in the region."
+            "label": "Leadership Workshops:",
+            "detail": "Participated in training sessions designed to build practical leadership skills for emerging community organizers."
           }
         ],
         "tags": [
@@ -223,28 +213,20 @@
       },
       "2023": {
         "title": "Road Manager",
-        "companyAndDate": "Nuko+ LLC | 2022 – 2025",
-        "intro": "In this position, my main focus was the flawless management of daily operational processes and the strategic planning of logistical tasks. I ensured that ongoing projects and field operations were executed smoothly, on time, and with maximum resource optimization.",
+        "companyAndDate": "Nuko+ LLC | January 2022 – September 2025",
+        "intro": "Managed day-to-day logistics and field operations, optimizing route planning and coordinating transport schedules to ensure timely deliveries.",
         "bullets": [
           {
-            "label": "Operational Management and Logistics:",
-            "detail": "Planning and coordinating daily work schedules, complex routes, and delivery processes. Monitoring the precise execution of field operations."
+            "label": "Logistics & Dispatch:",
+            "detail": "Planned and coordinated daily routes and transport schedules, monitoring active field operations for efficiency."
           },
           {
-            "label": "Resource Optimization:",
-            "detail": "Efficient allocation of human and material resources, ensuring cost minimization and increased team productivity."
+            "label": "Resource Allocation:",
+            "detail": "Managed driver schedules and fuel resources, reducing operational costs while maintaining delivery reliability."
           },
           {
-            "label": "Real-time Crisis Management (Troubleshooting):",
-            "detail": "Making quick, data-driven, and alternative decisions during unforeseen delays to maintain workflow continuity."
-          },
-          {
-            "label": "Team Coordination and Field Control:",
-            "detail": "Ensuring close and continuous communication between field and administrative teams, monitoring performance quality, and providing detailed instructions."
-          },
-          {
-            "label": "Process Improvement and Reporting:",
-            "detail": "Timely identification of operational flaws, refining Standard Operating Procedures (SOPs), and preparing analytical reports for management."
+            "label": "Crisis Management:",
+            "detail": "Resolved delays and logistical bottlenecks on the spot, making quick decisions to keep shipments moving."
           }
         ],
         "tags": [
@@ -255,29 +237,25 @@
         ]
       },
       "2021": {
-        "title": "Agile Manager and Business Analyst",
-        "companyAndDate": "Space | 2020 – 2022",
-        "intro": "In this position, my main focus was managing the product development cycle within the company and synchronizing strategic business requirements with technical execution. By implementing Agile methodology and optimizing processes, I ensured the seamless operation of cross-functional teams and the timely delivery of the product to the market (Time-to-market).",
+        "title": "Credit Risk Analyst",
+        "companyAndDate": "Space | February 2020 – December 2022",
+        "intro": "Analyzed credit risks and updated risk management strategies at Space. I wrote and maintained Java-based decision-making code, analyzed loan rejection patterns, and supported partner merchants in integrating our installment products, leading a small dedicated team.",
         "bullets": [
           {
-            "label": "Agile/Scrum Process Facilitation:",
-            "detail": "Planning and managing sprints (Sprint Planning, Daily Stand-ups, Retrospectives). Maintaining the team's work rhythm and eliminating existing barriers (Blockers) along the development path."
+            "label": "Java Risk Engineering:",
+            "detail": "Maintained and updated the automated credit decision-making logic in Java, aligning execution directly with business policies and credit risk limits."
           },
           {
-            "label": "Business Analysis and Requirements Management:",
-            "detail": "Working with stakeholders to identify business needs. Transforming them into clear, actionable technical tasks (User Stories, Acceptance Criteria) for the development team."
+            "label": "Rejection Analysis & Reporting:",
+            "detail": "Monitored loan application outcomes, investigated rejection root causes, and presented data-driven reports and ideas to improve acceptance rates."
           },
           {
-            "label": "Backlog Administration:",
-            "detail": "Close collaboration with Product Owners to prioritize tasks and maintain a healthy Backlog structure."
+            "label": "Merchant Installment Support:",
+            "detail": "Partnered with e-commerce merchants to help them integrate our API and installment payment options into their checkout systems."
           },
           {
-            "label": "Data-Driven Management:",
-            "detail": "Utilizing my previous (BI) experience to analyze team efficiency and delivery metrics for continuous process improvement."
-          },
-          {
-            "label": "Communication Bridge between Business and IT:",
-            "detail": "Translating technical language into business language and vice versa to ensure full transparency and proper expectation management across the company."
+            "label": "Team Coordination:",
+            "detail": "Guided a small, focused team responsible for managing risk rules and technical integration support."
           }
         ],
         "tags": [
